@@ -22,7 +22,7 @@ import java.util.Scanner;
  * 35
  */
 
-public class Solution {
+public class Main {
     // 求两个数的最大公约数
     private static int fun1(int m, int n) {
         if (n == 0) return m;

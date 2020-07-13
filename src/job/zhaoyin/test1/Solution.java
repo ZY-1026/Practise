@@ -24,7 +24,7 @@ public class Solution {
     }
 
     public static void main(String[] args) throws IOException {
-        //System.out.println(new Solution().sum("D:\\Workspace\\IDEA\\practise\\src\\Data.txt"));
+        //System.out.println(new Main().sum("D:\\Workspace\\IDEA\\practise\\src\\Data.txt"));
 //        double a = 1.0;
 //        int b = 1;
 //        System.out.println(a==b);
