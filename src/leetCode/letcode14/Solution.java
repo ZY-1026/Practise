@@ -23,11 +23,14 @@ import java.util.Arrays;
  */
 
 public class Solution {
+
+    // 方法一
     public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) return "";
         // 对字符串进行排序
         StringBuilder stringBuilder = new StringBuilder();
         Arrays.sort(strs);
+        // 排序之后只需比较第一个和最后一个
         int first = strs[0].length();
         int last = strs[strs.length - 1].length();
         int num = Math.min(first, last);
@@ -39,5 +42,25 @@ public class Solution {
             }
         }
         return stringBuilder.toString();
+    }
+
+    // 方法二
+    // 寻找两个串的公共前缀
+    public String helper(String s1, String s2) {
+        int length = Math.min(s1.length(), s2.length());
+        int index = 0;
+        while (index < length && s1.charAt(index) == s2.charAt(index))
+            index++;
+        return s1.substring(0, index);
+    }
+
+    public String longestCommonPrefix1(String[] strs) {
+        if (strs == null || strs.length == 0) return "";
+        String prefix = strs[0];
+        for (int i = 1; i < strs.length; i++) {
+            prefix = helper(prefix, strs[i]);
+            if (prefix.length() == 0) break;
+        }
+        return prefix;
     }
 }

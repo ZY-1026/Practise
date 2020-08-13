@@ -1,5 +1,8 @@
 package leetCode.letcode01;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
  * <p>
@@ -38,14 +41,13 @@ public class Solution {
         return index;
     }
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] nums = new int[]{2, 4, 8, 15};
-        int target = 10;
-        int[] index;
-        index = solution.twoSum(nums, target);
-        for (int i : index) {
-            System.out.println(i);
+    public int[] twoSum1(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int tmp = target - nums[i];
+            if (map.containsKey(tmp)) return new int[]{map.get(tmp), i};
+            map.put(nums[i], i);
         }
+        return null;
     }
 }

@@ -43,4 +43,29 @@ public class Solution {
         }
         return r - l - 1;
     }
+
+    // 暴力法
+    public String longestPalindrome1(String s) {
+        if (s == null || s.length() == 1) return s;
+        String ans = "";
+        int max = 0;
+        int len = s.length();
+        for (int i = 0; i < len; i++)
+            for (int j = i + 1; j <= len; j++) {
+                String tmp = s.substring(i, j);
+                if (isPalindrome(tmp) && tmp.length() > max) {
+                    ans = s.substring(i, j);
+                    max = Math.max(max, ans.length());
+                }
+            }
+        return ans;
+    }
+
+    public boolean isPalindrome(String s) {
+        int len = s.length();
+        for (int i = 0; i < (len >> 1); i++) {
+            if (s.charAt(i) != s.charAt(len - i - 1)) return false;
+        }
+        return true;
+    }
 }

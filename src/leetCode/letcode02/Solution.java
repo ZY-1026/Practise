@@ -50,5 +50,4 @@ public class Solution {
         }
         return headNode.next;
     }
-
 }

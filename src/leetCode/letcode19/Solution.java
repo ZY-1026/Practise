@@ -1,5 +1,7 @@
 package leetCode.letcode19;
 
+import leetCode.utils.ListNode;
+
 /**
  * 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
  * <p>
@@ -14,34 +16,46 @@ package leetCode.letcode19;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}
-
-
 public class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         int length = 0;
         ListNode first = head;
+        // 总共有多少个元素
         while (first != null) {
             length++;
             first = first.next;
         }
+
+        // 删除第length-n个元素
         length -= n;
+
+        // first重新指向dummy
         first = dummy;
+
+        // 将first指向第length-n个元素
         while (length > 0) {
             length--;
             first = first.next;
         }
+        // 重置指针
         first.next = first.next.next;
+        return dummy.next;
+    }
+
+    public ListNode removeNthFromEnd2(ListNode head, int n) {
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        ListNode one = dummy, two = dummy;
+        for (int i = 0; i <= n; i++) {
+            one = one.next; // 快指针
+        }
+        while (one != null) {
+            one = one.next;
+            two = two.next;
+        }
+        two.next = two.next.next;
         return dummy.next;
     }
 }
