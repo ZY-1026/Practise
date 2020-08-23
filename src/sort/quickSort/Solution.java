@@ -3,19 +3,12 @@ package sort.quickSort;
 public class Solution {
 
     public static int partition(int[] array, int low, int high) {
-        int i = low;
-        int j = high;
-        int tmp = array[i]; //将第一个元素作为基准
+        int i = low, j = high;
+        int tmp = array[i];
         while (i < j) {
-            //右侧扫描
-            while (i < j && array[j] >= tmp) {
-                j--;
-            }
+            while (i < j && array[j] >= tmp) j--;
             array[i] = array[j];
-
-            while (i < j && array[i] <= tmp) {
-                i++;
-            }
+            while (i < j && array[i] <= tmp) i++;
             array[j] = array[i];
         }
         array[i] = tmp;

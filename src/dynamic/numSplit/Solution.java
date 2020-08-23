@@ -18,4 +18,8 @@ public class Solution {
             return dp[n][k];
         }
     }
+
+    public static void main(String[] args) {
+        System.out.println(dp(3,3));
+    }
 }

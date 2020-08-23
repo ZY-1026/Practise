@@ -8,25 +8,17 @@ public class Solution {
         int i = low, j = mid + 1, k = 0;
         while (i <= mid && j <= high) {
             if (a[i] <= a[j]) {
-                b[k] = a[i];
-                k++;
-                i++;
+                b[k++] = a[i++];
             } else {
-                b[k] = a[j];
-                k++;
-                j++;
+                b[k++] = a[j++];
             }
         }
 
         while (i <= mid) { // 左侧没有扫描完
-            b[k] = a[i];
-            k++;
-            i++;
+            b[k++] = a[i++];
         }
         while (j <= high) { // 右侧没有扫描完
-            b[k] = a[j];
-            k++;
-            j++;
+            b[k++] = a[j++];
         }
 
         for (k = 0, i = low; i <= high; k++, i++) {
