@@ -20,8 +20,8 @@ public class Main1 {
                     if (t1 + t2 == n) {
                         String tmpT1 = String.valueOf(t1);
                         String tmpT2 = String.valueOf(t2);
-                        if ((tmpT1.charAt(0)!=tmpT1.charAt(1)&&tmpT1.charAt(0)!=tmpT1.charAt(2)&&tmpT1.charAt(1)!=tmpT1.charAt(2)) &&
-                                (tmpT2.charAt(0)!=tmpT2.charAt(1)&&tmpT2.charAt(1)==tmpT2.charAt(2))){
+                        if ((tmpT1.charAt(0) != tmpT1.charAt(1) && tmpT1.charAt(0) != tmpT1.charAt(2) && tmpT1.charAt(1) != tmpT1.charAt(2))
+                                && (tmpT2.charAt(0) != tmpT2.charAt(1) && tmpT2.charAt(1) == tmpT2.charAt(2))) {
                             list.add(t1);
                         }
                     }
