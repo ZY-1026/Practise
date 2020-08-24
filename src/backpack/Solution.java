@@ -1,7 +1,6 @@
-package backpack01;
+package backpack;
 
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 /**

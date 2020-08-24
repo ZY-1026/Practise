@@ -1,15 +1,9 @@
 package bishi.tencent;
 
+import leetCode.utils.ListNode;
+
 import java.util.Scanner;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        this.val = x;
-    }
-}
 
 public class Main1 {
     private static ListNode delete(ListNode head, int n) {

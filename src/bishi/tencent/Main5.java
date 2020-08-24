@@ -1,6 +1,5 @@
 package bishi.tencent;
 
-import java.util.Scanner;
 
 public class Main5 {
     private static int minCut(String s) {
@@ -19,7 +18,7 @@ public class Main5 {
                 }
             }
         }
-        return dp[len - 1];
+        return dp[len - 1] + 1;
     }
 
     private static boolean helper(String s, int left, int right) {
@@ -32,18 +31,6 @@ public class Main5 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        sc.nextLine();
-        int Q = sc.nextInt();
-        sc.nextLine();
-        while (Q > 0) {
-            String[] strings = sc.nextLine().split(" ");
-            int left = Integer.valueOf(strings[0]);
-            int right = Integer.valueOf(strings[1]);
-            String tmp = s.substring(left-1, right);
-            System.out.println(minCut(tmp));
-            Q--;
-        }
+        System.out.println(minCut("ababa"));
     }
 }
