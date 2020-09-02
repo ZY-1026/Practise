@@ -16,6 +16,24 @@ package leetCode.interview1005;
 
 public class Solution {
     public int findString(String[] words, String s) {
-        return 0;
+        if (words.length == 1 && words[0].equals(s)) return 0;
+        int i = 0, j = words.length - 1;
+        while (i <= j) {
+            while (i < j && words[i].equals("")) i++;
+            while (i < j && words[j].equals("")) j--;
+            if (i <= j) {
+                int mid = (i + j) / 2;
+                while (mid < j && words[mid].equals("")) mid++;
+                if (words[mid].compareTo(s) > 0) {
+                    j = mid - 1;
+                } else if (words[mid].compareTo(s) < 0) {
+                    i = mid + 1;
+                } else {
+                    return mid;
+                }
+            }
+        }
+        return -1;
     }
 }
+

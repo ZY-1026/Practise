@@ -1,28 +1,42 @@
 package bishi.huawei;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class Test2 {
-    private static long helper(int target, int[] nums) {
-        long[] dp = new long[target + 1];
-        dp[0] = 1;
-        for (int num : nums) {
-            for (int x = num; x < target + 1; ++x) {
-                dp[x] += dp[x - num];
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] nums = new int[5];
+        for (int index = 0; index < 5; index++) {
+            nums[index] = sc.nextInt();
+        }
+        int[] price = {13, 11, 7, 3, 1};
+        int target = sc.nextInt();
+        Queue<Integer> bfs = new LinkedList<>();
+        Queue<Integer> bfsn = new LinkedList<>();
+
+        bfs.offer(0);
+        bfsn.offer(0);
+
+        boolean[] flag = new boolean[target];
+        while (!bfs.isEmpty()) {
+            int sum = bfs.poll();
+            int depth = bfsn.poll();
+            for (int index = 0; index < 5; index++) {
+                int nextsum = sum + price[index];
+                if (nextsum == target) {
+                    System.out.println(depth + 1);
+                    sc.close();
+                    return;
+                } else if (nextsum < target && !flag[nextsum]) {
+                    flag[nextsum] = true;
+                    bfs.offer(nextsum);
+                    bfsn.offer(depth + 1);
+                }
             }
         }
-        return dp[target];
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String[] strings = scanner.nextLine().split(" ");
-        int target = Integer.valueOf(strings[0]);
-        int[] nums = new int[strings.length - 1];
-
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] = Integer.valueOf(strings[i + 1]);
-        }
-        System.out.println(helper(target, nums));
+        sc.close();
     }
 }
+

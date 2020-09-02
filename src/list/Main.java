@@ -17,7 +17,7 @@ public class Main {
         // Array转List
         String[] str = new String[]{"Jey", "TianLuo"};
         List list1 = Arrays.asList(str);
-        for (int i=0;i<list1.size();i++){
+        for (int i = 0; i < list1.size(); i++) {
             System.out.println(list1.get(i));
         }
         /**
@@ -25,20 +25,20 @@ public class Main {
          *  Arrays.asList不是返回java.util.ArrayList,
          *  而是一个内部类ArrayList
          */
-       // list1.add("boy");
+        // list1.add("boy");
 
         // 弥补
         // 方法一
         ArrayList<String> arrayList = new ArrayList<>(str.length);
         Collections.addAll(arrayList, str);
         arrayList.add("BOY");
-        for (String tmp : arrayList){
+        for (String tmp : arrayList) {
             System.out.println(tmp);
         }
 
         // 方法二
         ArrayList<String> list2 = new ArrayList<>(Arrays.asList(str));
-        for (String tmp : list2){
+        for (String tmp : list2) {
             System.out.println(tmp);
         }
     }
