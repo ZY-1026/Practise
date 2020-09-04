@@ -1,4 +1,4 @@
-package leetCode.interview68;
+package leetCode.interview0068;
 
 import leetCode.utils.TreeNode;
 

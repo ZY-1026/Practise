@@ -26,7 +26,7 @@ package leetCode.letcode392;
 public class Solution {
     public boolean isSubsequence(String s, String t) {
 //        for(int i = 0 ; i< s.length(); i++){
-//            if(binarySearch(t, s.charAt(i)) == false){
+//            if(leetCode.mytest.binarySearch(t, s.charAt(i)) == false){
 //                return false;
 //            }
 //        }
@@ -41,7 +41,7 @@ public class Solution {
 //
 //
 //    // 利用二分查找在字符串t中查找字符c
-//    public static boolean binarySearch(String t, char c){
+//    public static boolean leetCode.mytest.binarySearch(String t, char c){
 //        String tmp = sort(t);
 //        int mid;
 //        int low = 0;

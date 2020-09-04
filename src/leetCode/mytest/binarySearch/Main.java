@@ -1,4 +1,4 @@
-package binarySearch;
+package leetCode.mytest.binarySearch;
 
 public class Main {
 

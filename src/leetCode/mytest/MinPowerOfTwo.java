@@ -1,7 +1,7 @@
 package leetCode.mytest;
 
 // 找大于等于某数的最小的2的n次幂
-public class Solution3 {
+public class MinPowerOfTwo {
     private static int min_power_two(int x) {
 //        int res = 1;
 //        while (res < x) {

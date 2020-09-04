@@ -1,4 +1,4 @@
-package permut;
+package leetCode.mytest.permut;
 
 import java.util.ArrayList;
 import java.util.Collections;

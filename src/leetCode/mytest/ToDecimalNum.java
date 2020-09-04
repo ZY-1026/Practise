@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 // 将16进制转化为10进制
-public class Solution2 {
+public class ToDecimalNum {
     public static int convert(String content) {
         if (!content.matches("[0-9a-fA-F]*")) {
             System.exit(-1);

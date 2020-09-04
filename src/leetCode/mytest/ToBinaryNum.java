@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Stack;
 
 
-public class Solution4 {
+public class ToBinaryNum {
     /**
      * 十进制转二进制：整型范围内
      *

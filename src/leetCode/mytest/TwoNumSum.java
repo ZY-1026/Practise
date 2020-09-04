@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
 // 一个排好序的数组，找出两数之和为m的所有组合
-public class Solution1 {
+public class TwoNumSum {
     public static void main(String[] args) {
         int[] nums = new int[]{-3, -2, -1, 0, 1, 2, 3};
         List<List<Integer>> lists = helper(nums, 0);
