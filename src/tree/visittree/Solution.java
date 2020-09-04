@@ -74,6 +74,7 @@ class TreeNode {
                 stack1.push(root.right);
             }
         }
+
         while (!stack2.empty()) {
             System.out.println(stack2.pop().val);
         }
