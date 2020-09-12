@@ -1,4 +1,4 @@
-package offer.test50;
+package leetCode.offer.offer50;
 
 
 import java.util.LinkedHashMap;

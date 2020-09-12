@@ -11,7 +11,7 @@ public class DigitalPermut {
      * @param res：保存所有的结果
      * @param index：当前处理的下标
      */
-    public void helper(int n, ArrayList<Integer> output, List<List<Integer>> res, int index) {
+    private void helper(int n, ArrayList<Integer> output, List<List<Integer>> res, int index) {
         if (index == n) res.add(new ArrayList<>(output));
         for (int i = index; i < n; i++) {
             Collections.swap(output, index, i);
@@ -28,5 +28,11 @@ public class DigitalPermut {
         }
         helper(nums.length, output, list, 0);
         return list;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3};
+        List<List<Integer>> lists = new DigitalPermut().permute(nums);
+        //for ()
     }
 }

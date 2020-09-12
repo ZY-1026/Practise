@@ -1,4 +1,4 @@
-package offer.test40;
+package leetCode.offer.offer40;
 
 import java.util.PriorityQueue;
 

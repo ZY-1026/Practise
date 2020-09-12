@@ -1,6 +1,5 @@
-package offer.test12;
+package leetCode.offer.offer12;
 
-import java.util.concurrent.Callable;
 
 public class Solution {
     public boolean exist(char[][] board, String word) {

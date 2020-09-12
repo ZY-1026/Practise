@@ -1,4 +1,4 @@
-package offer.test54;
+package leetCode.offer.offer54;
 
 import leetCode.utils.TreeNode;
 

@@ -1,4 +1,4 @@
-package offer.test33;
+package leetCode.offer.offer33;
 
 public class Solution {
     public boolean verifyPostorder(int[] postorder) {

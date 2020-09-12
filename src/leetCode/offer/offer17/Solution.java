@@ -1,4 +1,4 @@
-package offer.test17;
+package leetCode.offer.offer17;
 
 import java.util.ArrayList;
 import java.util.List;

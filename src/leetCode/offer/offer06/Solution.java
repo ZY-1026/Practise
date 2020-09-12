@@ -1,4 +1,4 @@
-package offer.test06;
+package leetCode.offer.offer06;
 
 import java.util.Stack;
 

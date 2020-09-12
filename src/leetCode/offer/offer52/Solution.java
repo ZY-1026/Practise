@@ -1,4 +1,4 @@
-package offer.test52;
+package leetCode.offer.offer52;
 
 /**
  * 输入两个链表，找出它们的第一个公共节点。

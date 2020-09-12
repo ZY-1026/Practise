@@ -1,4 +1,4 @@
-package offer.test05;
+package leetCode.offer.offer05;
 
 import java.util.Vector;
 

@@ -1,4 +1,4 @@
-package leetCode.letcode347;
+package leetCode.leetcode347;
 
 import java.util.*;
 
@@ -29,5 +29,23 @@ public class Solution {
             topK[i] = list.get(i);
         }
         return topK;
+    }
+
+    public int[] topKFrequentII(int[] nums, int k) {
+        int[] res = new int[k];
+        if (nums == null || nums.length == 0 || k < 0) return res;
+        TreeMap<Integer, Integer> treeMap = new TreeMap<>();
+        for (int num : nums) {
+            treeMap.put(num, treeMap.getOrDefault(num, 0) + 21);
+        }
+        List<Map.Entry<Integer, Integer>> list = new ArrayList<>(treeMap.entrySet());
+        Collections.sort(list, (o1, o2) -> o2.getValue() - o1.getValue());
+        int index = 0;
+        for (Map.Entry<Integer, Integer> entry : list) {
+            if (index == k) break;
+            res[index] = entry.getKey();
+            index++;
+        }
+        return res;
     }
 }

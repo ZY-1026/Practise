@@ -1,4 +1,4 @@
-package leetCode.letcode1020;
+package leetCode.leetcode1020;
 
 public class Solution {
     public int numEnclaves(int[][] A) {

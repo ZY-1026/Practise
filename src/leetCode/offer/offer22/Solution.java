@@ -1,4 +1,4 @@
-package offer.test22;
+package leetCode.offer.offer22;
 
 import leetCode.utils.ListNode;
 
