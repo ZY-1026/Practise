@@ -1,7 +1,15 @@
+package leetCode.mytest;
+
 import java.util.HashSet;
 
 public class SeqSub {
-    // 两个字符串的最长连续子系列
+    /**
+     * 两个字符串的最长连续子序列
+     *
+     * @param text1
+     * @param text2
+     * @return
+     */
     private int longCommonSubSeq(String text1, String text2) {
         int m = text1.length(), n = text2.length();
         int[][] dp = new int[m + 1][n + 1];
@@ -19,7 +27,7 @@ public class SeqSub {
     }
 
     /**
-     * 两个字符串的最长连续字串
+     * 两个字符串的最长连续子串
      *
      * @param A 字符串
      * @param B 字符串
