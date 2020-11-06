@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="03aa9bba-503e-4829-a5d6-a1205aa54072" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/practise/SeqSub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/practise/bishi/wangyihuyu/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/practise/bishi/wangyihuyu/Main1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/practise/bishi/wangyihuyu/Main2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/practise/leetCode/leetcode18/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/practise/leetCode/leetcode18/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetCode/leetcode106/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetCode/leetcode106/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetCode/leetcode18/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetCode/leetcode18/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetCode/leetcode344/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetCode/leetcode344/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetCode/mytest/SeqSub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetCode/mytest/SeqSub.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +29,20 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/leetCode/leetcode1207/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/leetCode/offer/offer39/Solution.java" />
         <option value="$PROJECT_DIR$/src/leetCode/offer/offer40/Solution.java" />
         <option value="$PROJECT_DIR$/src/leetCode/offer/offer50/Solution.java" />
         <option value="$PROJECT_DIR$/src/leetCode/offer/offer52/Solution.java" />
@@ -131,6 +134,7 @@
         <option value="$PROJECT_DIR$/src/leetCode/leetcode1002/Solution.java" />
         <option value="$PROJECT_DIR$/src/leetCode/leetcode52/Solution.java" />
         <option value="$PROJECT_DIR$/src/leetCode/leetcode844/Solution.java" />
+        <option value="$PROJECT_DIR$/src/leetCode/leetcode1207/Solution.java" />
       </list>
     </option>
   </component>
@@ -158,7 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -176,12 +179,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603108661445" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1604627153881" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BookService/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -425,16 +429,18 @@
       <workItem from="1602903037113" duration="1694000" />
       <workItem from="1603074320508" duration="6740000" />
       <workItem from="1603180862217" duration="825000" />
+      <workItem from="1603891635982" duration="1230000" />
+      <workItem from="1604626918869" duration="285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="924877000" />
+    <option name="totallyTimeSpent" value="926392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19743936" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2041779" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -502,16 +508,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/leetCode/offer/offer56/SolutionI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/leetCode/mytest/permut/DigitalPermut.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -881,6 +877,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetCode/leetcode1207/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
