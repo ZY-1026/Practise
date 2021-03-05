@@ -27,7 +27,7 @@ public class Main1 {
                     }
                 }
             }
-        }//for-1
+        }   // for-1
         if (list.size() == 0) {
             System.out.println(0);
             return;
